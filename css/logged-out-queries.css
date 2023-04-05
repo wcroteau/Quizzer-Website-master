@@ -1,0 +1,132 @@
+@media (max-width: 105em) {
+  .preview-container {
+    height: 40%;
+  }
+
+  .main-text {
+    width: 50%;
+    font-size: 48px;
+    font-weight: 700;
+    margin-left: 2rem;
+    transform: translate(0%);
+  }
+}
+
+@media (max-width: 75em) {
+  #main-section {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+    justify-content: center;
+    height: 90rem;
+  }
+
+  .preview-container {
+    justify-self: center;
+    align-self: start;
+    width: 70%;
+    height: 90%;
+    margin-right: 0%;
+  }
+
+  .main-text {
+    text-align: center;
+    justify-self: center;
+  }
+}
+
+@media (max-width: 60em) {
+  #next-section-preview-container {
+    width: 90%;
+    height: 60%;
+  }
+
+  #try-flex-column {
+    width: 90%;
+    height: 30rem;
+  }
+
+  #main-section {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+    justify-content: center;
+    height: 90rem;
+  }
+
+  .preview-container {
+    justify-self: center;
+    align-self: start;
+    width: 70%;
+    height: 80%;
+    margin-right: 0%;
+  }
+
+  .main-text {
+    text-align: center;
+    justify-self: center;
+  }
+}
+@media (max-width: 45em) {
+  .header {
+    padding: 0 0rem;
+  }
+
+  .logo {
+    height: 32px;
+  }
+  #next-section-preview-container {
+    width: 90%;
+  }
+
+  #about-text-head {
+    font-size: 18px;
+    margin-bottom: 1rem;
+  }
+
+  #try-flex-column {
+    width: 90%;
+    height: 30rem;
+  }
+
+  #about-text {
+    font-size: 12px;
+  }
+
+  #main-section {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+    justify-content: center;
+    height: 90rem;
+  }
+
+  .preview-container {
+    justify-self: center;
+    align-self: start;
+    width: 90%;
+    height: 80%;
+    margin-right: 0%;
+  }
+
+  .main-text {
+    text-align: center;
+    justify-self: center;
+    font-size: 35px;
+    width: 70% !important;
+  }
+}
+
+@media (min-width: 57em) {
+  #next-section-preview-container {
+    width: 70%;
+    height: 60%;
+  }
+}
+
+@media (min-width: 95em) {
+  #next-section-preview-container {
+    width: 50%;
+    height: 60%;
+  }
+}

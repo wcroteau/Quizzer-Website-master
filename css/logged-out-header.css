@@ -1,0 +1,71 @@
+.header {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  flex-basis: 50%;
+  align-items: center;
+
+  background-color: #fff;
+  border-bottom: 0.4rem solid #40c057;
+  box-shadow: 0 0 0.3rem #0000003d;
+  height: 6.6rem;
+  padding: 0 4.8rem;
+  width: 100%;
+}
+
+#quizzer-img-container {
+  width: auto;
+  height: auto;
+  padding: 1.2rem;
+  transition: all 0.2s;
+  justify-self: start;
+  align-self: center;
+}
+
+.logo {
+  height: 42px;
+}
+
+.logo:hover,
+.logo:active {
+  transform: scale(1.1);
+  transition: all 0.2s;
+}
+
+/* NAVIGATION */
+
+.main-nav {
+  display: grid;
+}
+.main-nav-list {
+  list-style: none;
+  display: flex;
+  gap: 2.4rem;
+  justify-self: end;
+  align-self: center;
+}
+
+.scale-up {
+  transition: all 0.2s;
+}
+
+.main-nav-link {
+  background-color: #40c057;
+  padding: 0.8rem;
+  border-radius: 10px;
+  font-weight: 450;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.8rem;
+  transition: all 0.2s;
+}
+
+.sign-up {
+  background-color: #ffb300;
+}
+
+.scale-up:hover,
+.scale-up:active {
+  transform: scale(1.1);
+  transition: all 0.2s;
+}

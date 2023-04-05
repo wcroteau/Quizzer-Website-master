@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quizzer</title>
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/logged-out-header.css" />
+    <link rel="stylesheet" href="css/logged-out.css" />
+    <link rel="stylesheet" href="css/logged-out-queries.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Quizzer // A mini quizlet experience</title>
+  </head>
+
+  <body>
+    <div class="content-container">
+    <header class="header">
+      <div id="quizzer-img-container" class="scale-up">
+      <a href="index.html">
+        <img class="logo" alt="Quizzer logo" src="images/Quizzer Logo OG.png" />
+      </a>
+    </div>
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li class="scale-up">
+            <a
+              id="sign-up-btn"
+              class="main-nav-link sign-up"
+              href="sign-in.html"
+              >Sign Up</a
+            >
+          </li>
+          <li class="scale-up">
+            <a id="log-in-btn" class="main-nav-link" href="sign-in.html"
+              >Log In</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div id="main-section">
+        <p class="main-text">
+          Put those flash cards away and start quizzing today!
+        </p>
+        <img src="images/Quizzer Trailer.gif" class="preview-container" >
+      </div>
+
+      <section id="section-next">
+        <p id="about" class="main-text">About</p>
+        <div id="about-flex-column">
+        <div id="next-section-preview-container">
+          <div id="about-contents-container">
+            <div class="img-flex">
+              <picture>
+                <source srcset="images/Quizzing.webp" type="image/webp"/>
+                <source srcset="images/quizzing.png" type="image/png"/>
+              </picture>
+            
+              <img  id="img1" src="images/Quizzing.webp" class="about-img" alt="Teaching you about quizzer. (Quizzing)"/>
+
+             <picture>
+              <source srcset="images/Edit.webp" type="image/webp"/>
+              <source srcset="images/Edit.png" type="image/png"/>
+            </picture>
+            <img id="img2" src="images/Edit.webp" class="about-img" alt="Teaching you about quizzer. (Editing)"/> 
+
+            <picture>
+              <source srcset="images/Themes.webp" type="image/webp"/>
+              <source srcset="images/themes.png" type="image/png"/>
+            </picture>  
+            <img id="img3" src="images/Themes.webp" class="about-img" alt="Teaching you about quizzer. (Themes)"/>
+          </div>
+
+
+
+
+
+      
+            <div id="about-text-contents-flex" class="flex-column"><p id="about-text-head">Themes for your enjoyment    <p id="about-text">Themes for your enjoyment</p></p></div>
+            
+          </div>
+        </div>
+
+        <div class="pagination-container">
+          <button id='arrow-left' class="arrow-btn scale-up"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+          </svg>
+          </button>
+       
+            <div id="preview-selection-1" class="scale-up pagination-selection-btn"></div>
+            <div id="preview-selection-2" class=" scale-up pagination-selection-btn"></div>
+            <div  id="preview-selection-3" class=" scale-up pagination-selection-btn"></div>
+       
+          <button id='arrow-right' class="arrow-btn scale-up"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+          </svg>
+          
+          </button>
+        </div>
+        </div>
+      </section>
+
+      <section id="section-last">
+        <div id="try-flex-column">
+       <div id="try-flex"><p id="try-now-text"class="main-text">Try Now!</p> <input
+        id="quiz-name-input"
+        type="text"
+        
+        placeholder="Quiz Name"
+        
+      />
+    </div>
+    <button id="start-quizzing-btn" class="scale-up">
+      <a  href="sign-in.html"
+        >Start Quizzing</a
+      >
+    </button>
+  </div>
+      </section>
+
+
+    </main>
+  </div>
+  </body>
+
+  <script src="https://unpkg.com/css-doodle@0.34.7/css-doodle.min.js"></script>
+  <script type="module" src="javascript/logged-out.js"></script>
+</html>
+
+
+<!-- <css-doodle class="doodle-position">
+  :doodle{ @grid: 10; @size: 100vmax; grid-gap: 50px; background:
+  linear-gradient(45deg, #51cf66, #ffb300);} transform:
+  scale(@rand(.1, .4)); translate3d(@r(50px), @r(100px), 0); background:
+  hsla(130, 85%, @r(70%, 90%), @r(.2)); border-radius: 50%; animation:
+  test infinite @r(300s, 400s) linear; @keyframes test{ 0%{ transform:
+  translate3d(0,0,0); } 50% {transform: translate3d(@r(-500%,
+  1000%),@r(-500%, 1000%),0); } 100% {transform: translate3d(0,0,0); }}
+</css-doodle> -->

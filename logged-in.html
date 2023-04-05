@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quizzer</title>
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/logged-in-header.css" />
+    <link rel="stylesheet" href="css/logged-in.css" />
+    <link rel="stylesheet" href="css/logged-in-queries.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="gray-theme-color">
+    <div class="content-container">
+      <button id="transparent-black-screen" class="hidden"></button>
+      <header id="main-header" class="header gray-theme-color">
+        <div id="quizzer-img-container" class="scale-up">
+          <a href="logged-in.html">
+            <img
+              class="logo"
+              alt="Quizzer logo"
+              src="images/Quizzer Logo OG.png"
+            />
+          </a>
+        </div>
+        <p id="signed-in-as" class="sub-title main-font-color"></p>
+        <div id="menu-btn" class="menu scale-up main-font-color">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-6 h-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+            />
+          </svg>
+        </div>
+      </header>
+      <div
+        class="menu-container grid no-opacity menu-hidden-pos main-theme-color"
+      >
+        <header class="title theme-title main-font-color">Theme</header>
+
+        <p id="most-recent-quiz" class="main-font-color">Most Recent Quiz:</p>
+        <p id="recent-quiz" class="main-font-color">QUIZ</p>
+        <button class="scale-up play-now-btn">Begin Quiz</button>
+        <div class="theme-cs-bg">
+          <button class="white-theme scale-up"></button>
+
+          <button class="gray-theme scale-up"></button>
+
+          <button class="purple-theme scale-up"></button>
+        </div>
+        <div class="scale-up log-out-btn">Log Out</div>
+      </div>
+      <button class="transparent-black-screen no-opacity"></button>
+
+      <main>
+        <nav class="main-nav flex-column">
+          <div id="select-a-quiz-main-div">
+            <div
+              id="qsc"
+              class="quiz-selection-container main-theme-color-secondary"
+            >
+              <header class="title select-a-quiz main-font-color">
+                SELECT A QUIZ
+              </header>
+              <div class="scroll-container">
+                <p id="no-quizzes-text" class="main-font-color">
+                  Looks like you haven't set up any quizzes yet.
+                  <a
+                    class="create-a-quiz-hyperlink main-hyperlink-color"
+                    href="#"
+                    >Start creating today!</a
+                  >
+                </p>
+              </div>
+              <button class="scale-up new-quiz-btn hidden">New Quiz</button>
+            </div>
+          </div>
+          <div
+            id="delete-container"
+            class="create-a-quiz-container container main-theme-color hidden"
+          >
+            <header
+              id="delete-question"
+              class="title select-a-quiz main-font-color"
+            >
+              Are you sure
+            </header>
+            <div class="remove-quiz-btn-flex">
+              <button id="delete-yes" class="scale-up delete-option-btn">
+                Yes
+              </button>
+              <button id="delete-no" class="scale-up delete-option-btn">
+                No
+              </button>
+            </div>
+          </div>
+          <!-- edit a quiz container -->
+          <div
+            id="eaqc"
+            class="container edit-question-container main-theme-color-secondary hidden"
+          ></div>
+
+          <!-- create a quiz container -->
+          <div
+            id="caqc"
+            class="create-a-quiz-container container main-theme-color-secondary hidden"
+          >
+            <header class="title create-a-quiz main-font-color">
+              CREATE A QUIZ
+            </header>
+            <select id="quiz-type-select">
+              <option value="sq">Standard Quiz</option>
+              <option value="mc">Multiple Choice</option>
+            </select>
+
+            <input
+              id="new-quiz-name-input"
+              type="text"
+              placeholder="Quiz Name"
+            />
+            <button id="create-btn" class="submit-btn">Create</button>
+          </div>
+        </nav>
+      </main>
+
+      <script src="javascript/alert-box.js"></script>
+      <script type="module" src="javascript/logged-in.js"></script>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,68 @@
+.log-in-container {
+  height: auto;
+  width: 80rem;
+  text-align: center;
+  color: #000;
+  background-color: #fff;
+  border: .3rem solid #ffb300;
+  border-radius: 8%;
+  margin: 15rem 5rem 5rem;
+  box-shadow: 0 0 .5rem #0000003d;
+}
+
+.container-header {
+  margin: 2rem 2rem 7rem;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.grid label {
+  font-size: 1.6rem;
+  font-weight: 500;
+  display: block;
+}
+
+.grid input {
+  width: 50%;
+  border: .1rem solid #00000080;
+  border-radius: .9rem;
+  margin-left: 25%;
+  padding: 1.2rem;
+  font-family: inherit;
+  font-size: 1.3rem;
+}
+
+.sign-up-bg {
+  width: 100%;
+  height: 96rem;
+  background-color: #40c057;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15rem;
+  display: flex;
+}
+
+.sign-up-hyperlink:link, .sign-up-hyperlink:visited {
+  color: #5d27da;
+  border-bottom: .1rem solid #5d27da;
+  margin: 0 .5rem .5rem;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+
+.sign-up-hyperlink:hover, .sign-up-hyperlink:active {
+  color: #df11ce;
+  border-bottom: .1rem solid #df11ce;
+}
+
+.sign-up-hyperlink-container {
+  display: flex;
+}
+
+.sign-up-hyperlink-container p {
+  color: #000;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+/*# sourceMappingURL=sign-in.14720722.css.map */

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quizzer</title>
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/logged-in-header.css" />
+    <link rel="stylesheet" href="css/logged-in.css" />
+    <link rel="stylesheet" href="css/quizzing.css" />
+    <link rel="stylesheet" href="css/quizzing-queries.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="gray-theme-color">
+    <header class="header gray-theme-color">
+      <a href="logged-in.html">
+        <img class="logo" alt="Quizzer logo" src="images/Quizzer Logo OG.png" />
+      </a>
+      <p id="signed-in-as" class="sub-title main-font-color"></p>
+    </header>
+
+    <main>
+      <nav id="quiz-container" class="main-nav flex-column">
+        <div class="quiz-header">
+          <header id="quiz-name" class="quiz-title main-font-color">
+            Quiz Name
+          </header>
+          <div
+            id="highest-combo"
+            class="highest-combo-text quiz-sub-text main-font-color"
+          >
+            Highest Combo:
+          </div>
+          <div id="combo" class="combo-text quiz-sub-text main-font-color">
+            Combo:
+          </div>
+        </div>
+
+        <div
+          id="quiz-question"
+          class="quiz-question quiz-sub-text main-font-color"
+        >
+          2 + 2
+        </div>
+        <div id="results" class="main-font-color no-opacity">Correct!</div>
+
+        <div id="correction-contianer" class="no-opacity">
+          <div class="flex-column"></div>
+
+          <div class="flex">
+            <div id="correct-answer-text" class="quiz-sub-text main-font-color">
+              Correct Answer:
+            </div>
+            <div
+              id="correct-answer-value"
+              class="quiz-answer-text main-font-color"
+            >
+              1
+            </div>
+          </div>
+          <div class="flex">
+            <div id="your-answer-text" class="quiz-sub-text main-font-color">
+              Your Answer:
+            </div>
+            <div
+              id="your-answer-value"
+              class="quiz-answer-text main-font-color"
+            >
+              1
+            </div>
+          </div>
+        </div>
+
+        <div id="multiple-choice-wrap" class="mc-grid"></div>
+      </nav>
+    </main>
+
+    <script type="module" defer src="javascript/quizzer.js"></script>
+  </body>
+</html>

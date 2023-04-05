@@ -1,0 +1,140 @@
+.log-in-container {
+  position: relative;
+  height: auto;
+  width: 40%;
+  border-radius: 8%;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  background-color: #ffffff;
+  margin: 15rem 5rem 5rem 5rem;
+  border: 0.3rem solid #ffb300;
+  box-shadow: 0 0 0.5rem #0000003d;
+}
+
+#create-acc-btn {
+  align-self: center;
+  justify-self: center;
+}
+
+#log-in-continue-btn {
+  align-self: center;
+  justify-self: center;
+}
+
+#bg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 96rem;
+  margin-top: 15rem;
+}
+
+.form-message {
+  margin: 2rem 2rem 2rem 2rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #ff0000;
+}
+.container-header {
+  margin: 2rem 2rem 7rem 2rem;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.grid label {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.grid input {
+  margin-left: 25%;
+  font-family: inherit;
+  width: 50%;
+  padding: 1.2rem;
+  border-radius: 0.9rem;
+  border: 0.1rem solid #00000080;
+  font-size: 1.3rem;
+}
+
+.sign-up-flex {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  margin-top: 15rem;
+}
+
+.sign-up-bg {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 110rem;
+  background-image: linear-gradient(45deg, #51cf66, #ffb300);
+
+  margin-top: 15rem;
+  overflow: hidden;
+}
+
+.sign-up-hyperlink:link,
+.sign-up-hyperlink:visited {
+  color: #5d27da;
+  font-size: 1.2rem;
+  text-decoration: none;
+  border-bottom: 0.1rem solid #5d27da;
+  margin: 0 0.5rem 0.5rem 0.5rem;
+}
+.sign-up-hyperlink:hover,
+.sign-up-hyperlink:active {
+  color: #df11ce;
+  border-bottom: 0.1rem solid #df11ce;
+}
+
+.sign-up-hyperlink-container {
+  display: flex;
+  grid-column: 2;
+}
+
+.sign-up-hyperlink-container p {
+  font-weight: 500;
+  color: #000;
+  font-size: 1.2rem;
+}
+
+.continue-as-quest-hyperlink:link,
+.continue-as-quest-hyperlink:visited {
+  color: #5d27da;
+  font-size: 1.2rem;
+  text-decoration: none;
+  border-bottom: 0.1rem solid #5d27da;
+  margin: 0 0.5rem 0.5rem 0.5rem;
+  grid-column: 2;
+  grid-row: 5;
+  justify-self: center;
+}
+.continue-as-quest-hyperlink:hover,
+.continue-as-quest-hyperlink:active {
+  color: #df11ce;
+  border-bottom: 0.1rem solid #df11ce;
+}
+
+.hyperlink-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  align-items: center;
+  justify-content: center;
+}
+.or-text {
+  font-weight: 500;
+  color: #000;
+  font-size: 1.2rem;
+  grid-column: 2;
+  grid-row: 3;
+  justify-self: center;
+}

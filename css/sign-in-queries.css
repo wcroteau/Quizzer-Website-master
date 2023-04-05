@@ -1,0 +1,57 @@
+@media (max-width: 95em) {
+  .log-in-container {
+    width: 60%;
+  }
+}
+@media (max-width: 50em) {
+  .log-in-container {
+    width: 80%;
+  }
+
+  .sign-up-hyperlink:link,
+  .sign-up-hyperlink:visited {
+    font-size: 1.2rem;
+    border-bottom: none;
+    margin: 0 0.5rem 0.2rem 0.2rem;
+  }
+
+  .sign-up-hyperlink:hover,
+  .sign-up-hyperlink:active {
+    border-bottom: none;
+  }
+
+  #create-acc-btn {
+    width: 50% !important;
+  }
+
+  #log-in-continue-btn {
+    width: 50% !important;
+  }
+}
+
+@media (max-width: 45em) {
+  .header {
+    padding: 0 0rem;
+  }
+
+  .logo {
+    height: 32px;
+  }
+}
+@media (max-width: 35em) {
+  .log-in-container {
+    width: 95%;
+  }
+
+  .sign-up-hyperlink:link,
+  .sign-up-hyperlink:visited {
+    font-size: 1.2rem;
+    border-bottom: none;
+    margin: 0 0.5rem 0.2rem 0.2rem;
+  }
+
+  .sign-up-hyperlink:hover,
+  .sign-up-hyperlink:active {
+    border-bottom: none;
+  }
+}

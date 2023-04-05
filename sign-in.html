@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quizzer</title>
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/logged-out-header.css" />
+    <link rel="stylesheet" href="css/sign-in.css" />
+    <link rel="stylesheet" href="css/sign-in-queries.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header id="main-header" class="header">
+      <a href="index.html">
+        <img class="logo" alt="Quizzer logo" src="images/Quizzer Logo OG.png" />
+      </a>
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li class="scale-up">
+            <a
+              id="sign-up-btn"
+              class="main-nav-link sign-up"
+              href="sign-in.html"
+              >Sign Up</a
+            >
+          </li>
+          <li class="scale-up">
+            <a id="log-in-btn" class="main-nav-link" href="sign-in.html"
+              >Log In</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="flex-column">
+        <div id="log-in-con" class="log-in-container">
+          <div class="container-header">Log In</div>
+          <form class="form grid" id="login">
+            <label for="username">Username</label>
+            <input
+              id="log-in-username"
+              type="text"
+              autofocus
+              placeholder="my_example"
+              required
+            />
+            <label>Password</label>
+            <input
+              id="log-in-password"
+              type="password"
+              autofocus
+              placeholder="Password"
+              required
+            />
+
+            <button id="log-in-continue-btn" class="submit-btn" type="submit">
+              Continue
+            </button>
+          </form>
+        </div>
+
+        <div class="hyperlink-grid">
+          <div class="sign-up-hyperlink-container">
+            <p>Don't have an account?</p>
+            <a class="sign-up-hyperlink" href="#">Sign up now!</a>
+          </div>
+
+          <p class="or-text">or</p>
+
+          <a id="guest-hyperlink" class="continue-as-quest-hyperlink" href="#"
+            >Continue as guest</a
+          >
+        </div>
+
+        <div class="sign-up-flex">
+          <div class="sign-up-bg"></div>
+
+          <div class="log-in-container">
+            <div class="container-header">Sign Up</div>
+
+            <form class="form grid" id="sign-up">
+              <div class="form-message form-message-error hidden">
+                Username must be at no more than 10 chars
+              </div>
+              <label for="username">Username</label>
+              <input
+                id="sign-up-username"
+                type="text"
+                autofocus
+                placeholder="my_example"
+                required
+              />
+
+              <label>Password</label>
+              <input
+                id="sign-up-password"
+                type="password"
+                placeholder="Password"
+                required
+              />
+
+              <label>Confirm Password</label>
+              <input
+                id="sign-up-confirm-password"
+                type="password"
+                placeholder="Retype Password"
+                required
+              />
+
+              <button id="create-acc-btn" class="submit-btn" type="submit">
+                Create Account
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="https://unpkg.com/css-doodle@0.34.7/css-doodle.min.js"></script>
+    <script defer src="javascript/alert-box.js"></script>
+    <script type="module" defer src="javascript/sign-in.js"></script>
+  </body>
+</html>
+
+<!-- 
+<css-doodle class="doodle-position">
+  :doodle{ @grid: 20; @size: 100vmax; grid-gap: 50px; background:
+  linear-gradient(45deg, #51cf66, #ffb300);} transform:
+  scale(@rand(.1, .4)); translate3d(@r(50px), @r(100px), 0);
+  background: hsla(130, 85%, @r(70%, 90%), @r(.2)); border-radius:
+  50%; animation: movement infinite @r(300s, 400s) linear;
+  @keyframes movement{ 0%{ transform: translate3d(0,0,0); } 50%
+  {transform: translate3d(@r(-500%, 1000%),@r(-500%, 1000%),0); }
+  100% {transform: translate3d(0,0,0); }}
+</css-doodle> -->

@@ -1,0 +1,10 @@
+@media (max-width: 66em) {
+  #settings-container {
+    width: 50%;
+  }
+}
+@media (max-width: 34em) {
+  #settings-container {
+    width: 80%;
+  }
+}
