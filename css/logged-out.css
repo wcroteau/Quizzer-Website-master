@@ -178,11 +178,13 @@
 }
 
 #about-contents-container {
-  display: grid;
-  width: 100%;
-  height: 100%;
-  grid-template-columns: repeat(1, 1fr);
-  grid-template-rows: repeat(2, 70% auto);
+  /* display: grid; */
+  /* width: 100%; */
+  /* height: 100%; */
+  /* grid-template-columns: repeat(1, 1fr); */
+  /* grid-template-rows: repeat(2, 70% auto); */
+  /* display: flex; */
+  /* flex-wrap: nowrap; */
 }
 
 #about-text-contents-flex {
@@ -217,9 +219,11 @@ picture {
 
 .img-flex {
   display: flex;
-  align-content: center;
-  justify-content: start;
-  justify-self: center;
+  flex-wrap: nowrap;
+  /* align-content: center; */
+  /* justify-content: start; */
+  /* justify-self: center; */
+  max-width: 1600px;
   transition: all 0.3s;
   height: 100%;
 }
